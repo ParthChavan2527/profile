@@ -1,0 +1,164 @@
+*{
+    margin : 0px;
+    padding : 0px;
+}
+
+
+body{
+    background-color: rgb(8, 8, 8);
+    color: white;
+}
+
+#page1{
+        height: 100vh;
+        width: 100vw;
+        background-image: url("mypic.png");
+        background-size: cover;
+
+
+}
+#header{
+    padding: 10px;
+    font-size: 50px;
+    color : #ff004f;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    text-shadow: 100px;
+    
+}
+#container{
+
+    padding: 10px 7%;
+}
+nav{
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+nav ul li{
+
+    display : inline-block;
+    list-style: none;
+    margin:10px 20px;
+}
+
+nav ul li a{
+
+    color : white;
+    text-decoration: none;
+    font-size: 20px;
+}
+/* nav ul li a::after{
+
+    content  :" ";
+    height : 3px;
+    width: 0;
+    background-color:#ff004f;
+    /* color: #ff004f; */
+    /* position : absolute;
+    left : 0px;
+    bottom : -6px;
+    transition : 0.5s;
+} */ 
+
+nav ul li a:hover{
+
+    padding: 10px;
+    border-radius: 10px;
+    background-color:#ff004f ;
+    transition: 0.7s;
+    
+}
+.text{
+    margin-top: 20%;
+    font-size:30px;
+}
+.text h1{
+    font-size :  60px;
+    margin-top : 20px;
+
+}
+.text h1 span{
+    color : #ff004f;
+}
+
+#about{
+    padding : 80px 0px;
+    color:#ababab;
+}
+.row{
+    display: flex;
+    justify-content:space-between ;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 35%;
+}
+
+.about-col-1 img{
+    /* border : 10px solid #ff004f;
+    padding : 20px; */
+    margin-left : 40px;
+    border-radius: 35px;
+}
+.about-col-2{
+    flex-basis: 60%;
+    padding-right: 20px;
+}
+#subtitle{
+    font-size: 60px;
+    font-weight: 600;
+    color:white;
+}
+.about-col-2 p{
+    font-size: 20px;;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    font-size: 50px;
+    margin-right : 100px;
+    font-weight: 600;
+    cursor: pointer;
+    position:relative;
+    
+}
+.tab-links::after{
+    content: '';
+    width :0;
+    height: 3px;
+    background: #ff004f;
+    position:absolute;
+    left : 0;
+    bottom : -8px;
+    transition : 0.5s;
+}
+.tab-links.active-link::after{
+
+    width: 50%;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin:10px 0;
+}
+.tab-contents ul li span{
+    color :#ff004f;
+    font-size: 14px;
+}
+.tab-contents{
+    display:none
+}
+.tab-contents.active-tab{
+    display:block;
+}
+
+
+
+
+
+
+
+

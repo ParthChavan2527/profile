@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY Portfolio</title>
+    <link rel = "stylesheet" href = "index.css">
+</head>
+<body>
+    <div id = "page1">
+        
+        <div id = "container">
+            <nav>
+
+                <p id = "header"> Parth Chavan.</p>
+                <ul>
+                    <li><a  href="#">Home</a></li>
+                    <li><a  href="#">About</a></li>
+                    
+                    <li><a  href="#">Portfolio</a></li>
+                    <li><a  href="#">Contact</a></li>
+                    
+                </ul>
+            </nav>
+            <div class="text">
+                <p>Web Developer</p>
+                <h1>Hi, I am <span>Parth</span> <br> from IIITA</h1>
+            </div>
+            
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src ="webdimage.webp" height ="500" width ="350" >
+                </div>
+                <div class="about-col-2">
+                    
+                    <h1 id ="subtitle">About Me</h1>
+                    <br>
+                    <p> Hey , Myself Parth Chavan currently I am studying in Indian Institute Of Information Technology Allahabad pursuing my Btech in Information Technology with minors in Buisness Informatics Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, quae non consequatur, enim exercitationem quo porro animi soluta at doloribus eaque, quaerat est! Error nihil iure ab molestiae deserunt quis Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, dolorem. Inventore odit voluptatum ullam eveniet sapiente impedit quae, quia, officiis explicabo doloribus temporibus non eaque architecto veniam. Autem, minima eveniet.
+                    Quo repudiandae voluptatum delectus consequatur maiores nemo laboriosam accusamus assumenda ipsa natus odit cupiditate rem iusto nostrum quas omnis voluptatem ducimus eos, perspiciatis accusantium praesentium. Sed officia quos dicta voluptatem.
+
+                    </p>
+                    <div class="tab-titles">
+                        <p class = "tab-links active-link"onclick="opentab('skills')">Skills</p>
+                        <p class = "tab-links"onclick="opentab('Education')">Education</p>
+                        <!-- <p class = "tab-links">Experience</p> -->
+                    </div>
+                    <div class="tab-contents active-tab"  id = "skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web Interfaces</li>
+                            <li><span>Web Development</span><br>Web Development</li>
+                            <li><span>App Development</span><br>Building Andriod apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id = "Education">
+                        <ul>
+                            <li><span>2011-2021</span><br>Studied in Good Shepherd Academy</li>
+                            <li><span>2021-2023</span><br>Studied in G.V.P.M School</li>
+                            <li><span>2023</span><br>Took admission in IIIT A</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+</body>
+</html>
